@@ -1,5 +1,5 @@
 module.exports = {
-    apiKey: "AIzaSyCzYYuMDWAyO0ZS-WdwGexPGGys55aiq3w",
+    apiKey: "",
     authDomain: "todoapp-eaae4.firebaseapp.com",
     databaseURL: "https://todoapp-eaae4.firebaseio.com",
     projectId: "todoapp-eaae4",
