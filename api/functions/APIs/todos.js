@@ -60,6 +60,9 @@ exports.deleteTodo = (request, response) => {
         .get()
         .then((doc) => {
             if (!doc.exists) {
+                if (doc.data().username !== request.user.username) {
+                    return response.status(403).json({ error: "UnAuthorized" })
+                }
                 return response.status(404).json({ error: 'Todo not found' })
             }
             return document.delete();
